@@ -1,0 +1,117 @@
+<html>
+
+    <head>
+    
+        <title>styled</title>
+            
+        <style type="text/css">
+        
+            #square-red{
+                background-color: red;
+                border: 6px grey groove;
+            }
+            
+            #square-blue{
+                background-color: blue;
+                border-bottom: 5px grey dashed;
+            }
+            
+            #square-green{
+                background-color: green;
+                border-style: dashed dotted solid inset;
+                border-width: 1px 3px 9px 20px;
+            }
+        
+            #square-grey{
+                background-color: grey;
+                border-radius: 20px;
+                padding-top:20px;
+            }
+            
+            .square{
+                width:100px;
+                height:100px;      
+                margin: 40px;
+                float:left;
+            }
+            
+            .bold{
+                font-weight:bold;
+            }
+            
+            .italic{
+                font-style:italic;
+            }
+            
+            .underlined{
+                text-decoration: underline;
+            }
+            
+            .big{
+                font-size:200%;
+            }
+            
+            .green-font{
+                color:#9ea337;
+            }
+            
+            p{
+                font-family:monospace;
+            }
+            
+            a{
+                text-decoration:none;
+            }
+            
+            a:hover{
+                text-decoration:underline;
+                color:green;
+            }
+            
+            img{
+                height:50%;
+                width:50%;
+            }
+            
+        </style>
+        
+    </head>
+
+    
+    <body>
+        
+        <img src="images/ES%20logo%20horiz%20RGB.jpg">
+        
+        <div id="square-red" class="square">
+        
+            <p class="bold">this is some text</p>
+            
+            <p class="green-font">testing fonts</p>
+            
+        </div>
+           
+        
+        <div id="square-blue" class="square">
+        
+            <p class="italic">this is some more text, <span class="bold">this is bold and italic</span></p>
+            
+        </div>
+    
+        
+        <div id="square-green" class="square">
+        
+            <p class="underlined">text that is underlined</p>
+        
+        </div>
+        
+        
+        <div id="square-grey" class="square">
+        
+            <a class="big" href="inline-css.html">this is a link</a>
+        
+        </div>
+        
+    </body>
+    
+    
+</html>
