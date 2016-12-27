@@ -1,0 +1,345 @@
+#article-container{
+    
+    float:left;
+    width:660px;
+    padding-bottom: 10px;
+    border-right: 1px solid #CCCCCC;
+
+}
+
+#article-hr{
+    
+    border-top: 1px solid #a91717;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+#article-summary{
+    
+    color: #5a5a5a;
+    width: 250px;
+    float:left;
+    
+}
+
+
+#article-summary a:hover{
+    
+    color: #2775B0;
+    
+}
+
+#article-summary p{
+    
+    position: relative;
+    top:-17px;
+    
+}
+
+#clock{
+    
+    width:20px;
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+
+#date{
+    
+    font-size: 90%;
+    padding-right: 5px;
+    
+}
+
+#down-arrow{
+    
+    height:10px;
+    position: relative;
+    top:10px;
+    
+}
+
+#logo{
+    
+    margin-top:8px;
+    margin-right:8px;
+    width:90px;
+    float:left;
+    
+}
+
+#mag-glass{
+
+    height:27px;
+    margin-top: 5px;
+    
+}
+
+#main-article-img{
+    
+    width=350px;
+    
+}
+
+#menu-bar{
+    
+    width:1000px;
+    margin:0 auto;
+    
+}
+
+#menu-bar-2{
+    
+    width:1000px;
+    margin:0 auto;
+    
+}
+
+#menu-bar-2 a{
+    
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 0 10px;
+    border-right: 1px solid #BB4545;
+    font-size: 14px;
+    position: relative;
+    top:9px;
+}
+
+#menu-bar-2 a:hover{
+    
+    text-decoration: underline;
+    
+}
+
+#menu-bar-container{
+    
+    width:100%;
+    margin:0 auto;
+    height:60px;
+    background-color: #BB1919;
+    
+    
+}
+
+#menu-bar-2-container{
+    
+    width:100%;
+    margin:0 auto;
+    height:35px;
+    background-color: #A91717;
+}
+
+#more-arrow{
+    
+    width:13px;
+    margin-left:20px;
+}
+
+#page-container{
+    
+    width:1000px;
+    margin: 0 auto;
+    
+}
+
+#search-box{
+    
+    float:left;
+    background-color: #E4E4E4;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding:5px;
+    margin:5px 0 5px 5px;
+}
+
+#signin{
+    
+    margin-right:40px;
+    
+}
+
+#signin-image{
+    
+    width:27px;
+    margin:8px 12px;
+    float:left;
+    
+}
+
+#signin-text{
+    
+    font-weight:bold;
+    font-size:90%;
+    position:relative;
+    top:14px;
+    right:12px;
+}
+
+#topbar{
+    
+    width:1000px;
+    margin:0 auto;
+    height:40px;
+    
+}
+
+#topic-link{
+    
+    text-decoration: none;
+    color: #BB1919;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 5px;
+    
+}
+
+#video-clock{
+    
+    width:15px;
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+    
+}
+
+#video-date{
+    
+    font-size: 70%;
+    padding-right: 5px;
+    
+}
+
+#video-link{
+    
+    font-size: 70%;
+    text-decoration: none;
+    color: #BB1919;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 5px;
+    
+}
+
+#video-link:hover{
+    
+    color: #1167a8;
+    
+}
+
+#watch-listen{
+   
+    float: left;
+    position: relative;
+    left: 10px;
+    top: -30px;
+}
+
+.article-link{
+    
+    color: black;
+    text-decoration: none;
+    
+}
+
+.clear{
+    
+    clear:both;
+    
+}
+
+.no-boder{
+    
+    border:none !important;
+    
+}
+
+.topbar-menu{
+    
+    font-weight: bold;
+    font-size: 90%;
+    padding: 13px 15px 0 15px;
+    height:27px;
+    
+}
+
+
+.topbar-section{
+    
+    float:left;
+    border-left: 1px #CCCCCC solid;
+    
+}
+
+.video{
+    width:100px;
+    float: left;
+    
+}
+
+.video-container{
+    
+    width:325px;
+    
+}
+
+.video-text{
+    
+    font-size: 70%;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    margin: 5px;
+    margin-right: 70px;
+}
+
+h1{
+    
+    padding:0;
+    margin:0;
+    color:white;
+    font-size:40px;
+    font-weight: normal;
+    padding-top: 7px;
+    
+}
+
+h2{
+    
+    font-weight: normal;
+    font-size: 20px;
+    color: ##707070;
+    border-bottom: 3px solid #BB1919;
+    width: 105px;
+    margin: 10px 0 0 0;
+}
+
+h3 a{
+    
+    color:black;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+h3 a:hover{
+    
+    color: #1167a8;
+    
+}
+
+h4{
+    
+    font-weight: normal;
+    font-size: 150%;
+    color: #404040;
+    
+}
+
+body{
+    
+    margin:0;
+    padding:0;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
