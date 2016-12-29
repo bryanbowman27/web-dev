@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+    
+        <title>javascript practice</title>
+        
+    </head>
+
+    <body>
+        
+        <p>what is the magic word?</p>
+        
+        <p><input id="magicWord" type="text"></p>
+        
+        <p><button id="checkWord">check word</button></p>
+           
+        <script type="text/javascript">
+        
+            var temp = "please";
+            var tweets = ["one","two","three"];
+            
+            document.getElementById("checkWord").onclick = function(){
+
+                if(temp == document.getElementById("magicWord").value){
+                    
+                    alert("you win");
+
+                } else {
+
+                    alert("lose");
+
+                }
+            
+            }
+            
+            for (var i=0; i < 3; i++){
+                
+                console.log(tweets[i]);
+                
+            }
+            
+            
+        </script>
+        
+    </body>
+    
+</html>

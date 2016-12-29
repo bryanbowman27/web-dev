@@ -1,0 +1,65 @@
+<html>
+
+    <head>
+    
+        <title>javascript</title>
+    
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+                
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+        
+    </head>
+
+    <body>
+    
+        <p id="text">hello world!</p>
+        
+        <button id="myButton">change text</button>
+        
+        <button onclick="alert('hi')">inline javascript</button>
+        
+        <p id="secondParagraph">javascript is...</p>
+        
+        <button id="secondButton">append text</button>
+        
+        <p id="emptyParagraph"></p>
+        
+        <button id="createParagraph">add content</button>
+        
+        <p id="moreText">here is even more text</p>
+        
+        <button id="styleText">style it</button>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("myButton").onclick = function(){
+                
+                document.getElementById("text").innerHTML = "ello bryan";
+                
+            }
+        
+            document.getElementById("secondButton").onclick = function(){
+                
+                document.getElementById("secondParagraph").innerHTML = document.getElementById("secondParagraph").innerHTML + "awesome";
+                
+            }
+            
+            document.getElementById("createParagraph").onclick = function(){
+                
+                document.getElementById("emptyParagraph").innerHTML = "here is some text";
+                
+            }
+            
+            document.getElementById("styleText").onclick = function(){
+                
+                document.getElementById("moreText").style.display = "none";
+                                
+            }
+            
+        </script>    
+            
+    </body>
+    
+</html>

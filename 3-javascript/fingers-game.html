@@ -1,0 +1,82 @@
+<html>
+
+    <head>
+    
+        <title>how many fingers</title>
+        
+    </head>
+
+    <body>
+    
+        <p>how many fingers are you holding up?</p>
+            
+        <p>
+            <select id="myNumber">
+            
+                <option>0</option>
+                
+                <option>1</option>
+                
+                <option>2</option>
+                
+                <option>3</option>
+                
+                <option>4</option>
+                
+                <option>5</option>
+                
+            </select>
+        </p>
+    
+        <button id="guess">check</button>        
+        
+        <script type="text/javascript">
+                        
+            document.getElementById("guess").onclick = function(){
+            
+                var myNumber = document.getElementById("myNumber").value;
+                
+                var gotIt = false;
+                
+                var numberOfGuesses = 1;
+                
+                //check if myNumber is valid input
+                if(myNumber > 5 | myNumber < 0){
+                    
+                    alert("not a valid input");
+                    gotIt = true;
+                    
+                }
+                
+                
+                while(gotIt == false){
+                    
+                    var guess = Math.random();
+
+                    guess = guess * 6;
+
+                    guess = Math.floor(guess);
+
+                    if(guess == myNumber){
+
+                        //computer is correct
+                        gotIt = true;
+                        alert("Got it! Took " + numberOfGuesses + " tries");
+                        
+                    }else{
+
+                        //computer is wrong
+                        numberOfGuesses++;
+                              
+                    }
+                
+                }
+                    
+            }
+                
+        </script>
+    
+    </body>
+    
+    
+</html>

@@ -1,0 +1,89 @@
+<html>
+
+    <head>
+    
+        <title>how many fingers 2</title>
+        
+    </head>
+
+    <body>
+    
+        <p>how many fingers are you holding up?</p>
+            
+        <p>
+            <select id="myNumber">
+            
+                <option>0</option>
+                
+                <option>1</option>
+                
+                <option>2</option>
+                
+                <option>3</option>
+                
+                <option>4</option>
+                
+                <option>5</option>
+                
+            </select>
+        </p>
+    
+        <button id="guess">check</button>        
+        
+        <script type="text/javascript">
+            
+            function doAGuess(correctAnswer, guessNumber){
+                
+                    var guess = Math.random();
+
+                    guess = guess * 6;
+
+                    guess = Math.floor(guess);
+
+                    if(guess == correctAnswer){
+
+                        //computer is correct
+                        alert("Got it! Took " + guessNumber + " tries");
+                        return(true);
+                        
+                    }else{
+
+                        //computer is wrong
+                        return(false);
+                              
+                    }
+                
+            }
+            
+            document.getElementById("guess").onclick = function(){
+            
+                var myNumber = document.getElementById("myNumber").value;
+                
+                var gotIt = false;
+                
+                var numberOfGuesses = 1;
+                
+                //check if myNumber is valid input
+                if(myNumber > 5 | myNumber < 0){
+                    
+                    alert("not a valid input");
+                    gotIt = true;
+                    
+                }
+                
+                
+                while(gotIt == false){
+                    
+                    gotIt = doAGuess(myNumber, numberOfGuesses);
+                    numberOfGuesses++;
+                    
+                }
+                    
+            }
+                
+        </script>
+    
+    </body>
+    
+    
+</html>
