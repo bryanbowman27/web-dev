@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+    
+        <title>jQuery</title>    
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <style>
+            
+            .circle{
+                height:150px;
+                width:150px;
+                background-color: darkseagreen;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            
+            .square{
+                height:150px;
+                width:150px;
+                background-color: deepskyblue;
+                margin: 10px;
+            }
+        
+        </style>
+        
+    </head>
+
+    <body>
+    
+        <div class="circle"></div>
+        
+        <div class="square"></div>
+        
+        <div class="square"></div>
+        
+        <script type="text/javascript">
+        
+            $(".circle").hover(function() {
+                
+                $(".circle").css("background-color", "red");
+                
+                console.log($("body").css("width"));
+                
+            });
+            
+            $("div").click(function(){
+                
+                $(this).css("display", "none"); 
+                
+                console.log("you clicked a " + $(this).attr("class"));
+                
+            });
+            
+        </script>
+    
+    </body>
+        
+</html>
