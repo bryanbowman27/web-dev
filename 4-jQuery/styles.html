@@ -8,14 +8,14 @@
         
         <style type="text/css">
         
-            #circle {
-                
-                width: 150px;
-                height: 150px;
+            #circle{
+                height: 200px;
+                width: 200px;
                 border-radius: 50%;
                 background-color: green;
-                
+                margin: 10px;
             }
+        
             
         </style>
         
@@ -25,16 +25,13 @@
     
         <div id="circle"></div>
         
+        <iframe src="http://www.cnn.com"></iframe>
+        
         <script type="text/javascript">
-                
-            $("#circle").click(function() {
-                
-                $(this).animate({
-                    width:"400px", 
-                    height:"400px",
-                    marginLeft:"100px",
-                    marginTop:"100px"
-                }, 2000); 
+    
+            $("#circle").hover(function() {
+                                
+               $("iframe").attr("src", "http://www.bryansbowman.com"); 
                 
             });
                         
