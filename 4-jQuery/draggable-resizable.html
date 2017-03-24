@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>draggables-resizables</title>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        
+        <style type="text/css">
+        
+            #resizable{
+                width: 250px;;
+                height: 200px;
+                border: 5px solid red;
+            }
+        
+        </style>
+        
+    </head>
+
+    <body>
+    
+        <div id="draggable">Drag me horizantally!</div>
+        
+        <div id="resizable">
+                
+            <span>Drag me within my box!</span>
+        
+        </div>
+        
+        <script type="text/javascript">
+        
+            $(function() {
+                $( "#draggable" ).draggable({ axis: "x" });
+                $( "span" ).draggable({ containment: "parent" });
+                
+                $( "#resizable" ).resizable({ 
+                    grid:50,
+                    resize: function( event, ui ) {
+                     
+                        if( $("#resizable").width() > 300){
+                            
+                            alert("big enough");
+                            
+                        }
+                        
+                    }
+                });
+
+            });
+            
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+
+#titleText{
+    font-family: sans-serif;
+    font-size: 150%;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#header{
+    background-color: gainsboro;
+    height: 40px;
+    padding-top: 12px;
+}
+
+#selectableContainer{
+    padding-left: 3px;
+    padding-right: 3px;
+    float: right;
+    position: relative;
+    
+}
+
+#selectable .ui-selected {
+    background: #F5F9FF
+}
+
+#selectable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#selectable li { 
+    float: left;
+    background: #E5E5E5;
+    font-family: sans-serif;
+    font-size: 75%;
+    padding: 3px;
+    border: 1px solid black;
+}
