@@ -1,43 +1,114 @@
+html{
+    height: 100%
+}
+
 body{
     margin: 0px;
+    height: 100%
+}
+
+textarea {
+  outline: none;
+}
+
+iframe{
+    border: none;
+}
+
+a{
+    background-color: #E5E5E5;
+    line-height: 30px;
+    font-size: 85%;
+    font-family: sans-serif;    
+    display: block;
+    float:left;
+    position: relative;
+    left: 28%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a.selected{
+    background-color: #dee7f4;
 }
 
 #titleText{
+    float: left;
     font-family: sans-serif;
     font-size: 150%;
     padding-left: 10px;
+    padding-top: 3px;
     font-weight: bold;
 }
 
 #header{
-    background-color: gainsboro;
-    height: 40px;
-    padding-top: 12px;
+    background-color: #E5E5E5;
+    height: 38px;
+    padding-top: 5px;
 }
 
-#selectableContainer{
-    padding-left: 3px;
-    padding-right: 3px;
-    float: right;
-    position: relative;
-    
+#htmlButton{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #BFBFBF;
 }
 
-#selectable .ui-selected {
-    background: #F5F9FF
+#cssButton{
+    border-bottom: 1px solid #BFBFBF;
+    border-top: 1px solid #BFBFBF;;
 }
 
-#selectable { 
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
+#jsButton{
+    border: 1px solid #BFBFBF;
 }
 
-#selectable li { 
+#outputButton{
+    border-radius: 0 5px 5px 0;
+    border-top: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+#codeContainer{
+    height: 95%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#htmlCodeContainer{
+    height: 100%;
     float: left;
-    background: #E5E5E5;
-    font-family: sans-serif;
-    font-size: 75%;
-    padding: 3px;
-    border: 1px solid black;
 }
+
+#cssCodeContainer{
+    height: 100%;
+    float: left;
+}
+
+#jsCodeContainer{
+    height: 100%;
+    float: left;
+}
+#htmlCode{
+    height: inherit;
+    width: inherit;
+    border-top: none;
+}
+
+#cssCode {
+    height: inherit;
+    width: inherit;
+    border-top: none;
+}
+
+#jsCode {
+    height: inherit;
+    width: inherit;
+    border-top: none;
+}
+
+#outputContainer{
+    height: 100%;
+    float: right;
+}
+

@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 
     <head>
@@ -23,19 +24,37 @@
         
             <span id="titleText">CodePlayer</span>
 
-            <div id="selectableContainer">
-                <ol id="selectable">
-
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Output</li>
-
-                </ol>
-            </div>
+            <a id="htmlButton" title="htmlButton" class="selected">HTML</a>
+            <a id="cssButton" title="cssButton" class="selected">CSS</a>
+            <a id="jsButton" title="jsButton" class="selected">Javascript</a>
+            <a id="outputButton" title="outputButton" class="selected">Output</a>
                 
         </div>
         
+        <div id="codeContainer">
+            
+            <div id="htmlCodeContainer">
+            
+                <textarea id="htmlCode"><p id="paragraph">Hello World!</p></textarea>
+            
+            </div>
+            
+            <div id="cssCodeContainer">
+            
+                <textarea id="cssCode">p{ color: red; }</textarea>
+            
+            </div>
+            
+            <div id="jsCodeContainer">
+            
+                <textarea id="jsCode">document.getElementById("paragraph").innerHTML = "Hello Bryan!";</textarea>
+            
+            </div>
+            
+            <iframe id="outputContainer"></iframe>
+            
+            
+        </div>
         
         <script type="text/javascript" src="js/script.js"></script>
         
